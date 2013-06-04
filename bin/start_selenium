@@ -1,0 +1,7 @@
+#!/bin/sh
+
+BASEDIR=$(dirname $0)
+cd $BASEDIR/../
+
+java -Xmx256m -jar selenium/selenium-server-standalone-2.31.0.jar > /dev/null &
+sleep 5
